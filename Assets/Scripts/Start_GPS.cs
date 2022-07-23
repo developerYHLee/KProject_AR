@@ -111,11 +111,6 @@ public class Start_GPS : MonoBehaviour
         Input.location.Stop();
         SceneManager.LoadScene("ARScene");
     }
-    public void SceneToGame()
-    {
-        Input.location.Stop();
-        SceneManager.LoadScene("GameScene");
-    }
     public void Quit()
     {
         Input.location.Stop();

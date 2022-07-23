@@ -10,10 +10,6 @@ public class ChangeScene : MonoBehaviour
         ARPlaceOnPlane.isChoose = false;
         SceneManager.LoadScene("ARScene");
     }
-    public void SceneToGame()
-    {
-        SceneManager.LoadScene("GameScene");
-    }
     public void SceneToStart()
     {
         SceneManager.LoadScene("StartScene");
