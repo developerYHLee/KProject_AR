@@ -7,10 +7,16 @@ using UnityEngine.XR.ARSubsystems;
 public class ARPlaceOnPlane : MonoBehaviour
 {
     public ARRaycastManager arRaycaster;
-    public GameObject robot, sheep, marker_Robot, marker_Sheep;
+    public GameObject robot, sheep, marker_objects;
     bool isPut, isTouched;
     public static bool isChoose;
     [SerializeField] private Camera arCamera;
+    private void OnEnable()
+    {
+        Debug.Log("isPut : " + isPut + " isChoose : " + isChoose);
+        Debug.Log(arRaycaster.GetComponent<Remove_ARMarkerImage>().enabled);
+        Debug.Log(arRaycaster.GetComponent<ARPointCloudManager>().enabled);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -61,8 +67,7 @@ public class ARPlaceOnPlane : MonoBehaviour
             }
             if(touch.phase == TouchPhase.Ended && isTouched)
             {
-                marker_Robot.SetActive(false);
-                marker_Sheep.SetActive(false);
+                marker_objects.SetActive(false);
                 arRaycaster.GetComponent<ARPointCloudManager>().enabled = true;
                 arRaycaster.GetComponent<ARPlaneManager>().enabled = true;
                 arRaycaster.GetComponent<ARTrackedImageManager>().enabled = false;
