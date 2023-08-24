@@ -27,11 +27,11 @@ AR 캐릭터를 통한 학교 건물 안내 어플
 <br></br>
 
 ### 🛠사용한 기술
-**사용 엔진** : Unity
+**사용 엔진** : <img src="https://img.shields.io/badge/UNITY-000000?style=flat-square&logo=unity&logoColor=FFFFFF"/>
 
-**언어** : C#
+**언어** : <img src="https://img.shields.io/badge/C%23-FFDB58?style=flat-square&logo=csharp&logoColor=white"/>
 
-**라이브러리** : AR Foundation, GPS
+**라이브러리** : <img src="https://img.shields.io/badge/AR Foundation-4CAF50?style=flat-square"/>, <img src="https://img.shields.io/badge/GPS-4CAF50?style=flat-square"/>
 <br></br>
 
 ### 🤔아쉬운 점
